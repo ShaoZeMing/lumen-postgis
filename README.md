@@ -30,7 +30,7 @@ Laravel postgis extension
 
 ## Installation
 
-    composer require phaza/laravel-postgis 
+    composer require shaozeming/lumen-postgis 'dev-master'
 
 
 laravel  Next add the DatabaseServiceProvider to your `config/app.php` file.
