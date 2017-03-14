@@ -88,6 +88,7 @@ class CreateLocationsTable extends Migration {
             $table->string('name');
             $table->string('address')->unique();
             $table->point('location');
+            $table->geometry('geom');
             $table->polygon('polygon');
             $table->timestamps();
         });
@@ -109,6 +110,7 @@ class CreateLocationsTable extends Migration {
 Available blueprint geometries:
 
  * point
+ * geometry
  * multipoint
  * linestring
  * multilinestring
@@ -162,6 +164,7 @@ $location2->location instanceof Point // true
 Available geometry classes:
  
  * Point
+ * Geometry
  * MultiPoint
  * LineString
  * MultiLineString
