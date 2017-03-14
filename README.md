@@ -5,8 +5,16 @@ Laravel postgis extension
 [![Code Climate](https://codeclimate.com/github/njbarrett/laravel-postgis/badges/gpa.svg)](https://codeclimate.com/github/njbarrett/laravel-postgis)
 [![Coverage Status](https://coveralls.io/repos/github/njbarrett/laravel-postgis/badge.svg?branch=master)](https://coveralls.io/github/njbarrett/laravel-postgis?branch=master)
 
+# Solemnly declare
+ * This is based on [Phaza\Laravel-Postgis](https://github.com/njbarrett/laravel-postgis) to modify Non-original;
+
+## 修改位置
+
+1. 修改了readme.md 关于lumen5.4 安装的注册服务，需要注册两个服务(见下文)。
+2. 添加了数据迁移命令`$table->geometry('geom')`;
+
+
 ## Features
- * This is based on [Phaza\Laravel-Postgis](https://github.com/njbarrett/laravel-postgis) to modify
  * Work with geometry classes instead of arrays. (`$myModel->myPoint = new Point(1,2)`)
  * Adds helpers in migrations. (`$table->polygon('myColumn')`)
  
@@ -16,8 +24,8 @@ Laravel postgis extension
 
 ## Versions
 
-Use for Laravel 5.3.*,5.4.*,
-Use for lumen 5.3.*,5.4.*,
+- Use for Laravel `5.3.*`;`5.4.*`
+- Use for lumen `5.3.*`;`5.4.*`
 
 
 ## Installation

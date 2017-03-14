@@ -17,6 +17,20 @@ class PostgisGrammar extends PostgresGrammar
         return 'GEOGRAPHY(POINT, 4326)';
     }
 
+
+
+    /**
+     * Adds a statement to add a geometry geometry column
+     * @author shaozeming@xiaobaiyoupin.com
+     * @param \Illuminate\Support\Fluent $column
+     * @return string
+     */
+    public function typeGeometry(Fluent $column)
+    {
+        return 'GEOMETRY(POINT, 4326)';
+    }
+
+
     /**
      * Adds a statement to add a point geometry column
      *

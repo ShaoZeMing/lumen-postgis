@@ -13,6 +13,19 @@ class Blueprint extends \Bosnadev\Database\Schema\Blueprint
         return $this->addColumn('point', $column);
     }
 
+
+    /**
+     * Add a geometry column on the table
+     * @author szm19920426@gmail.com
+     * @param      $column
+     * @return \Illuminate\Support\Fluent
+     */
+    public function geometry($column)
+    {
+        return $this->addColumn('geometry', $column);
+    }
+
+
     /**
      * Add a multipoint column on the table
      *
