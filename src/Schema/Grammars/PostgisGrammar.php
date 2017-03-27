@@ -18,10 +18,9 @@ class PostgisGrammar extends PostgresGrammar
     }
 
 
-
     /**
      * Adds a statement to add a geometry geometry column
-     * @author shaozeming@xiaobaiyoupin.com
+     * @author szm19920426@gmail.com
      * @param \Illuminate\Support\Fluent $column
      * @return string
      */

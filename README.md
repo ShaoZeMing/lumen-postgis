@@ -11,7 +11,8 @@ Laravel postgis extension
 ## 修改位置
 
 1. 修改了readme.md 关于lumen5.4 安装的注册服务，需要注册两个服务(见下文)。
-2. 添加了数据迁移命令`$table->geometry('geom')`;
+2. 添加了几何数据迁移命令`$table->geometry('geom')`;
+3. 添加 $location1->location = new GeomPoint(37.422009, -122.084047); 实现gis几何数据直接利用模型插入
 
 
 ## Features
@@ -155,6 +156,7 @@ $location1 = new Location();
 $location1->name = 'Googleplex';
 $location1->address = '1600 Amphitheatre Pkwy Mountain View, CA 94043';
 $location1->location = new Point(37.422009, -122.084047);
+$location1->geom = new GeomPoint(37.422009, -122.084047);  //这个可以执行成功实现ORM操作gis几何数据。
 $location1->save();
 
 $location2 = Location::first();

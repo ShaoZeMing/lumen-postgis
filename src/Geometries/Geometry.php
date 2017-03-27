@@ -31,6 +31,8 @@ abstract class Geometry implements GeometryInterface, \JsonSerializable
         switch (strtoupper($type)) {
             case 'POINT':
                 return Point::class;
+//            case 'POINT':
+//                return GeomPoint::class;
             case 'LINESTRING':
                 return LineString::class;
             case 'POLYGON':

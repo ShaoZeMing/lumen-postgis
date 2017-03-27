@@ -24,6 +24,8 @@ class Builder extends EloquentBuilder
 
     protected function asWKT(GeometryInterface $geometry)
     {
-        return $this->getQuery()->raw(sprintf("ST_GeogFromText('%s')", $geometry->toWKT()));
+//        return $this->getQuery()->raw(sprintf("ST_GeogFromText('%s')", $geometry->toWKT()));
+     //shaozeming edit
+        return $this->getQuery()->raw(sprintf("ST_GeomFromText('%s',4326)", $geometry->toWKT()));
     }
 }

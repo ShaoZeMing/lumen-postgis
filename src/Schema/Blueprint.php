@@ -13,7 +13,6 @@ class Blueprint extends \Bosnadev\Database\Schema\Blueprint
         return $this->addColumn('point', $column);
     }
 
-
     /**
      * Add a geometry column on the table
      * @author szm19920426@gmail.com
@@ -24,6 +23,7 @@ class Blueprint extends \Bosnadev\Database\Schema\Blueprint
     {
         return $this->addColumn('geometry', $column);
     }
+
 
 
     /**
@@ -84,7 +84,7 @@ class Blueprint extends \Bosnadev\Database\Schema\Blueprint
     /**
      * Add a geography column on the table
      *
-     * @param   string  $column
+     * @param   string $column
      * @return \Illuminate\Support\Fluent
      */
     public function geography($column)
@@ -105,6 +105,11 @@ class Blueprint extends \Bosnadev\Database\Schema\Blueprint
     {
         return $this->addCommand('geometrycollection', compact('column', 'srid', 'dimensions', 'typmod'));
     }
+
+
+
+
+
 
     /**
      * Enable postgis on this database.

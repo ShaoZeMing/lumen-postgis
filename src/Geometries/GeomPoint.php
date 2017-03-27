@@ -2,7 +2,7 @@
 
 use GeoJson\GeoJson;
 
-class Point extends Geometry
+class GeomPoint extends  GeometryCollection
 {
     protected $lat;
     protected $lng;
