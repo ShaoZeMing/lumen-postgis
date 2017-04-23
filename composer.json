@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Phaza\\LaravelPostgis\\": "src/"
+            "Shaozeming\\LumenPostgis\\": "src/"
         }
     },
     "autoload-dev": {
