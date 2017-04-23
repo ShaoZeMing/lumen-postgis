@@ -1,6 +1,6 @@
 <?php
 
-use Phaza\LaravelPostgis\Geometries\Point;
+use Shaozeming\LumenPostgis\Geometries\Point;
 
 class PointTest extends BaseTestCase
 {

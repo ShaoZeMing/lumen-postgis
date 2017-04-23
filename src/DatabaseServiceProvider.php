@@ -1,12 +1,12 @@
 <?php
-namespace Phaza\LaravelPostgis;
+namespace Shaozeming\LumenPostgis;
 use Illuminate\Database\DatabaseManager;
-use Phaza\LaravelPostgis\Connectors\ConnectionFactory;
+use Shaozeming\LumenPostgis\Connectors\ConnectionFactory;
 use Bosnadev\Database\DatabaseServiceProvider as PostgresDatabaseServiceProvider;
 
 /**
  * Class DatabaseServiceProvider
- * @package Phaza\LaravelPostgis
+ * @package Shaozeming\LumenPostgis
  */
 class DatabaseServiceProvider extends PostgresDatabaseServiceProvider
 {

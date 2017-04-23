@@ -1,4 +1,4 @@
-<?php namespace Phaza\LaravelPostgis\Schema;
+<?php namespace Shaozeming\LumenPostgis\Schema;
 
 class Blueprint extends \Bosnadev\Database\Schema\Blueprint
 {

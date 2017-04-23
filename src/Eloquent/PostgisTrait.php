@@ -1,11 +1,11 @@
-<?php namespace Phaza\LaravelPostgis\Eloquent;
+<?php namespace Shaozeming\LumenPostgis\Eloquent;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Support\Arr;
-use Phaza\LaravelPostgis\Exceptions\PostgisFieldsNotDefinedException;
-use Phaza\LaravelPostgis\Geometries\Geometry;
-use Phaza\LaravelPostgis\Geometries\GeometryCollection;
-use Phaza\LaravelPostgis\Geometries\GeometryInterface;
+use Shaozeming\LumenPostgis\Exceptions\PostgisFieldsNotDefinedException;
+use Shaozeming\LumenPostgis\Geometries\Geometry;
+use Shaozeming\LumenPostgis\Geometries\GeometryCollection;
+use Shaozeming\LumenPostgis\Geometries\GeometryInterface;
 
 trait PostgisTrait
 {
@@ -15,7 +15,7 @@ trait PostgisTrait
      * Create a new Eloquent query builder for the model.
      *
      * @param  \Illuminate\Database\Query\Builder $query
-     * @return \Phaza\LaravelPostgis\Eloquent\Builder
+     * @return \Shaozeming\LumenPostgis\Eloquent\Builder
      */
     public function newEloquentBuilder($query)
     {

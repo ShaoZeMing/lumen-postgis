@@ -1,7 +1,7 @@
-<?php namespace Phaza\LaravelPostgis\Eloquent;
+<?php namespace Shaozeming\LumenPostgis\Eloquent;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
-use Phaza\LaravelPostgis\Geometries\GeometryInterface;
+use Shaozeming\LumenPostgis\Geometries\GeometryInterface;
 
 class Builder extends EloquentBuilder
 {

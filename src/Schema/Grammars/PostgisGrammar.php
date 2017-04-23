@@ -1,7 +1,7 @@
-<?php namespace Phaza\LaravelPostgis\Schema\Grammars;
+<?php namespace Shaozeming\LumenPostgis\Schema\Grammars;
 
 use Illuminate\Support\Fluent;
-use Phaza\LaravelPostgis\Schema\Blueprint;
+use Shaozeming\LumenPostgis\Schema\Blueprint;
 use Bosnadev\Database\Schema\Grammars\PostgresGrammar;
 
 class PostgisGrammar extends PostgresGrammar

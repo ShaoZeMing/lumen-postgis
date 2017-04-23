@@ -2,7 +2,7 @@
 
 use BaseTestCase;
 use Mockery;
-use Phaza\LaravelPostgis\Schema\Blueprint;
+use Shaozeming\LumenPostgis\Schema\Blueprint;
 
 class BlueprintTest extends BaseTestCase
 {

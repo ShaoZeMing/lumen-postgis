@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Container\Container;
-use Phaza\LaravelPostgis\Connectors\ConnectionFactory;
-use Phaza\LaravelPostgis\PostgisConnection;
+use Shaozeming\LumenPostgis\Connectors\ConnectionFactory;
+use Shaozeming\LumenPostgis\PostgisConnection;
 use Stubs\PDOStub;
 
 class ConnectionFactoryBaseTest extends BaseTestCase

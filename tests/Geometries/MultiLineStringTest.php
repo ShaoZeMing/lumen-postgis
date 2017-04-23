@@ -1,8 +1,8 @@
 <?php
 
-use Phaza\LaravelPostgis\Geometries\LineString;
-use Phaza\LaravelPostgis\Geometries\Point;
-use Phaza\LaravelPostgis\Geometries\MultiLineString;
+use Shaozeming\LumenPostgis\Geometries\LineString;
+use Shaozeming\LumenPostgis\Geometries\Point;
+use Shaozeming\LumenPostgis\Geometries\MultiLineString;
 
 class MultiLineStringTest extends BaseTestCase
 {

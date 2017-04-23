@@ -2,9 +2,9 @@
 
 use Illuminate\Database\Eloquent\Model;
 use Mockery as m;
-use Phaza\LaravelPostgis\Eloquent\PostgisTrait;
-use Phaza\LaravelPostgis\Geometries\Point;
-use Phaza\LaravelPostgis\PostgisConnection;
+use Shaozeming\LumenPostgis\Eloquent\PostgisTrait;
+use Shaozeming\LumenPostgis\Geometries\Point;
+use Shaozeming\LumenPostgis\PostgisConnection;
 
 class PostgisTraitTest extends BaseTestCase
 {

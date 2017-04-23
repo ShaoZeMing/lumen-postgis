@@ -36,7 +36,7 @@ Laravel postgis extension
 
 laravel  Next add the DatabaseServiceProvider to your `config/app.php` file.
 ```
-    'Phaza\LaravelPostgis\DatabaseServiceProvider',
+    'Shaozeming\LumenPostgis\DatabaseServiceProvider',
 ```
 That's all.
 
@@ -44,7 +44,7 @@ Lumen  Next add the DatabaseServiceProvider to your `bootstrap/app.php` file.
 
 ```
      $app->register(Bosnadev\Database\DatabaseServiceProvider::class);   //多添加这个后，就可以解决问题。
-     $app->register(Phaza\LaravelPostgis\DatabaseServiceProvider::class);
+     $app->register(Shaozeming\LumenPostgis\DatabaseServiceProvider::class);
 ```
 That's all.
 
@@ -72,7 +72,7 @@ Open the created migrations with your editor.
 
 ```PHP
 use Illuminate\Database\Migrations\Migration;
-use Phaza\LaravelPostgis\Schema\Blueprint;
+use Shaozeming\LumenPostgis\Schema\Blueprint;
 
 class CreateLocationsTable extends Migration {
 
@@ -133,8 +133,8 @@ what attributes/columns on your model are to be considered geometry objects.
 
 ```PHP
 use Illuminate\Database\Eloquent\Model;
-use Phaza\LaravelPostgis\Eloquent\PostgisTrait;
-use Phaza\LaravelPostgis\Geometries\Point;
+use Shaozeming\LumenPostgis\Eloquent\PostgisTrait;
+use Shaozeming\LumenPostgis\Geometries\Point;
 
 class Location extends Model
 {

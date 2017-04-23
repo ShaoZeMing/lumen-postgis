@@ -1,4 +1,4 @@
-<?php namespace Phaza\LaravelPostgis;
+<?php namespace Shaozeming\LumenPostgis;
 
 class PostgisConnection extends \Bosnadev\Database\PostgresConnection
 {
